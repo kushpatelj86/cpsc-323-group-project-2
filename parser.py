@@ -293,11 +293,11 @@ class Parser:
 # Test the LR parser with sample input strings
 parser = Parser()
 
-liststrings = ["(id+id)*id","id*id","(id*)"]
+inputstring = "(id+id)*id"
 
 
-for i in liststrings:
-    print("Output:", parser.parse(i.strip()))
-    print()
+print("Input: ", inputstring)
+print("Output:", parser.parse(inputstring.strip()))
+print()
 
 
